@@ -107,7 +107,7 @@ public class SegmentTree {
         }
 
 //        LYING OUTSIDE THE QUERY INTERVAL
-        else if (node.st > qs || node.ed < qe){
+        else if (node.st > qe || node.ed < qs){
             return 0;
         }
 
